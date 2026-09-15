@@ -21,7 +21,7 @@ def ask_ai(prompt):
         
     except Exception as cloud_error: # <--- This defines the variable!
         # 2. INTERNET FAILED, AUTO-FALLBACK TO LOCAL OLLAMA
-        print(f"⚠️ Cloud unreachable. Reason: {cloud_error}")
+        print(f"Cloud unreachable. Reason: {cloud_error}")
         print("Rerouting to offline secure vault (Ollama)...")
         
         try:
