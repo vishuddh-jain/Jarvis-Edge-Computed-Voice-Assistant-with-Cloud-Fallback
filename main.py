@@ -23,9 +23,12 @@ def processCommand(c):
     elif "open linkedin" in c.lower():
         webbrowser.open("https://linkedin.com")
     elif "open chatgpt" in c.lower():
-        webbrowser.open("https://facebook.com")
+        webbrowser.open("https://chatgpt.com")
     elif "open github" in c.lower():
         webbrowser.open("https://github.com")
+    elif "open facebook" in c.lower():
+        webbrowser.open("https://facebook.com")
+        
     elif c.lower().startswith("play"):
         song = c.lower().split(" ")[1]
         link = musicLibrary.music[song]
