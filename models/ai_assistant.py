@@ -14,7 +14,7 @@ def ask_ai(prompt):
         client = Groq()
         chat_completion = client.chat.completions.create(
             messages=[{"role": "user", "content": prompt}],
-            model="llama-3.1-8b-instant",
+            model="openai/gpt-oss-20b",
             timeout=10.0  # Increased to 10 seconds to allow for connection time
         )
         return chat_completion.choices[0].message.content
